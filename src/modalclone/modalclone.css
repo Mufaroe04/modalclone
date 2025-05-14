@@ -15,9 +15,15 @@
     max-width: 800px;
     margin: auto;
     display: flex;
-    flex-direction: column-reverse
+    flex-direction: column-reverse;
+    text-align:left;
   }
-  
+  a{
+    color:black
+  }
+  #button-more{
+    width: 30%;
+  }
   .modal-heading {
     font-size: 1.875rem;
     font-weight: 600;

@@ -6,7 +6,7 @@ import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
 import TypingEffect from "./TypingEffect";
 import SVGMagnify from "./SVGMagnify";
-
+import Button from 'react-bootstrap/Button';
 const ModalClone = () => {
   const [chartData, setChartData] = useState({
     options: {
@@ -19,7 +19,7 @@ const ModalClone = () => {
         },
       },
       toolbar: {
-        show: false, // Add this line to hide the icons
+        show: false, // This line hides the toolbar
       },
       colors: ["#F4511E", "#2E93fA"],
       stroke: {
@@ -122,6 +122,7 @@ const ModalClone = () => {
                 <p className="small-text">
                   AI technology that gets you hot loads
                 </p>
+              <Button variant="secondary" href="https://spotter.ai/" id="button-more"> Learn More</Button>
               </div>
               <div className="chart-container">
                 <ReactApexChart
@@ -133,6 +134,9 @@ const ModalClone = () => {
                   width="100%"
                 />
               </div>
+              <br></br>
+              <br></br>
+              <br></br>
             </div>
           </div>
         </Col>
@@ -166,25 +170,25 @@ const ModalClone = () => {
                 <div className="svg-container">
                   <SVGMagnify />
                 </div>
+                <br></br>
+                <p className="small-text">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="16"
+                    height="16"
+                    fill="currentColor"
+                    class="bi bi-radar"
+                    viewBox="0 0 16 16"
+                    color="#f35b22"
+                  >
+                    <path d="M6.634 1.135A7 7 0 0 1 15 8a.5.5 0 0 1-1 0 6 6 0 1 0-6.5 5.98v-1.005A5 5 0 1 1 13 8a.5.5 0 0 1-1 0 4 4 0 1 0-4.5 3.969v-1.011A2.999 2.999 0 1 1 11 8a.5.5 0 0 1-1 0 2 2 0 1 0-2.5 1.936v-1.07a1 1 0 1 1 1 0V15.5a.5.5 0 0 1-1 0v-.518a7 7 0 0 1-.866-13.847" />
+                  </svg>
+                  <b></b>
+                  <i class="bi bi-radar"></i>
+                  Identify all anonymous loads.{" "}
+                </p>
               </div>
               <br></br>
-
-              <p className="small-text">
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="16"
-                  height="16"
-                  fill="currentColor"
-                  class="bi bi-radar"
-                  viewBox="0 0 16 16"
-                  color="#f35b22"
-                >
-                  <path d="M6.634 1.135A7 7 0 0 1 15 8a.5.5 0 0 1-1 0 6 6 0 1 0-6.5 5.98v-1.005A5 5 0 1 1 13 8a.5.5 0 0 1-1 0 4 4 0 1 0-4.5 3.969v-1.011A2.999 2.999 0 1 1 11 8a.5.5 0 0 1-1 0 2 2 0 1 0-2.5 1.936v-1.07a1 1 0 1 1 1 0V15.5a.5.5 0 0 1-1 0v-.518a7 7 0 0 1-.866-13.847" />
-                </svg>
-                <b></b>
-                <i class="bi bi-radar"></i>
-                Identify all anonymous loads.{" "}
-              </p>
             </div>
           </Row>
           <br></br>
@@ -206,7 +210,7 @@ const ModalClone = () => {
                     <path d="M4.54.146A.5.5 0 0 1 4.893 0h6.214a.5.5 0 0 1 .353.146l4.394 4.394a.5.5 0 0 1 .146.353v6.214a.5.5 0 0 1-.146.353l-4.394 4.394a.5.5 0 0 1-.353.146H4.893a.5.5 0 0 1-.353-.146L.146 11.46A.5.5 0 0 1 0 11.107V4.893a.5.5 0 0 1 .146-.353zM5.1 1 1 5.1v5.8L5.1 15h5.8l4.1-4.1V5.1L10.9 1z" />
                     <path d="M5.255 5.786a.237.237 0 0 0 .241.247h.825c.138 0 .248-.113.266-.25.09-.656.54-1.134 1.342-1.134.686 0 1.314.343 1.314 1.168 0 .635-.374.927-.965 1.371-.673.489-1.206 1.06-1.168 1.987l.003.217a.25.25 0 0 0 .25.246h.811a.25.25 0 0 0 .25-.25v-.105c0-.718.273-.927 1.01-1.486.609-.463 1.244-.977 1.244-2.056 0-1.511-1.276-2.241-2.673-2.241-1.267 0-2.655.59-2.75 2.286m1.557 5.763c0 .533.425.927 1.01.927.609 0 1.028-.394 1.028-.927 0-.552-.42-.94-1.029-.94-.584 0-1.009.388-1.009.94" />
                   </svg>
-                  What Can Spotter Do for You?
+                 <b>  What Can Spotter Do for You?</b>
                 </h3>
                 <p className="small-text">
                   {" "}
