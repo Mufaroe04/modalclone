@@ -17,10 +17,11 @@ const ModalClone = () => {
         dropShadow: {
           enabled: false,
         },
+        toolbar: {
+          show: false, // This line hides the toolbar
+        },
       },
-      toolbar: {
-        show: false, // This line hides the toolbar
-      },
+   
       colors: ["#F4511E", "#2E93fA"],
       stroke: {
         curve: "smooth",
