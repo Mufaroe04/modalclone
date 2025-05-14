@@ -1,0 +1,149 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins');
+
+* {
+  font-family: 'Poppins', sans-serif;
+}
+.modal-clone {
+    background-color: #f8fafc;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    font-family: "Inter", sans-serif;
+  }
+  
+  .modal-content {
+    max-width: 800px;
+    margin: auto;
+    display: flex;
+    flex-direction: column-reverse
+  }
+  
+  .modal-heading {
+    font-size: 1.875rem;
+    font-weight: 600;
+    color: #1e293b;
+    margin-bottom: 1rem;
+    text-align: left;
+  }
+  
+  .chart-container {
+    width: 100%;
+    margin: 0 auto;
+  }
+  
+  .app-stores, .features, .signup {
+    margin: 1rem 0;
+  }
+  
+  .features p, .signup p {
+    margin: 0.5rem 0;
+  }
+  
+  h3 {
+    margin-top: 1rem;
+    font-family: var(--ff-inter);
+    font-size: 2rem;
+    font-weight: 500;
+    line-height: 24px;
+  }
+
+  b{
+    color: #197394;
+  }
+  .Label-module--label--28ddc {
+    background: hsla(0, 0%, 100%, 0.7);
+    border: 1px solid #f0f0ed;
+    border-radius: 0.2rem;
+    box-shadow: inset 0 1px 2px 0 rgba(24, 25, 22, 0.04);
+    color: #8c8c89;
+    font-family: var(--jb-mono);
+    font-size: 1.0rem;
+    font-weight: 400;
+    line-height: 10px;
+    padding: 0.5rem 1rem;
+    position: relative;
+    z-index: 2;
+    display: inline-block; /* Add this line */
+    width: 30%;
+    font-family: 'Fira Mono', monospace; /* Or Source Code Pro, IBM Plex Mono, etc. */
+    text-align: left;
+}
+
+.Label-module--label--28ddc .Label-module--cursor--a2fd2 {
+    color: #c1c1be;
+    display: inline-block; /* For proper cursor blinking */
+}
+  .small-heading {
+    font-size: 1.5rem; /* Adjust according to your needs */
+  }
+  
+  .small-text {
+    font-size: 0.875rem; /* Smaller font size */
+  }
+  
+  .flex-grow-1 {
+    flex-grow: 1; /* Ensures this row occupies more space */
+  }
+  .WhyFingerprintSection-module--magnifier--702c1 {
+    height: 100%;
+    left: 0;
+    -webkit-mask-image: url("data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='128' height='128' fill='none' viewBox='0 0 128 128'%3E%3Ccircle cx='64' cy='64' r='64' fill='%23D9D9D9'/%3E%3C/svg%3E");
+    mask-image: url("data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='128' height='128' fill='none' viewBox='0 0 128 128'%3E%3Ccircle cx='64' cy='64' r='64' fill='%23D9D9D9'/%3E%3C/svg%3E");
+    -webkit-mask-origin: center;
+    mask-origin: center;
+    -webkit-mask-position: calc(var(--x) - 42px) calc(var(--y) - 42px);
+    mask-position: calc(var(--x) - 42px) calc(var(--y) - 42px);
+    -webkit-mask-repeat: no-repeat;
+    mask-repeat: no-repeat;
+    -webkit-mask-size: 84px;
+    mask-size: 84px;
+    position: absolute;
+    top: 0;
+    width: 100%;
+  }
+  @media (min-width: 641px) {
+    .WhyFingerprintSection-module--magnifier--702c1 {
+      opacity: 0;
+      transition: opacity 0.2s ease-in-out;
+    }
+    .WhyFingerprintSection-module--grid--e5035:hover
+      .WhyFingerprintSection-module--magnifier--702c1 {
+      opacity: 1;
+    }
+  }
+  .WhyFingerprintSection-module--magnifier--702c1
+    .WhyFingerprintSection-module--magnifierGlass--67fb2 {
+    background-color: #f0f0ed;
+    height: 100%;
+    position: static;
+    transform: scale(1.5);
+    width: 100%;
+  }
+/* cursor effect  */
+
+.visible {
+    opacity: 1;
+}
+
+.hidden {
+    opacity: 0;
+}
+.svg-container:hover path {
+    /* By default, we can set a transition for a smooth effect */
+    transition: fill 0.3s ease-in-out;
+  }
+  
+  .svg-container:hover path[fill="#D9D9D9"]:nth-child(1) { /* Target the first gray path */
+    /* fill: #F35B22; */
+  }
+  
+  .svg-container:hover path[fill="#D9D9D9"]:nth-child(25) { /* Target the fifth gray path */
+    /* fill: #F35B22; */
+  }
+  
+  /* Add more rules to target other specific gray paths you want to turn orange on hover */
+  .svg-container:hover path[fill="#D9D9D9"]:nth-child(50) {
+    /* fill: #F35B22; */
+  }
+  
+  /* ... and so on for all the squares you want to change */
