@@ -136,7 +136,7 @@
 }
 .svg-container:hover path {
     /* By default, we can set a transition for a smooth effect */
-    transition: fill 0.3s ease-in-out;
+    transition: fill 0s ease-in-out;
   }
   
   .svg-container:hover path[fill="#D9D9D9"]:nth-child(1) { /* Target the first gray path */
