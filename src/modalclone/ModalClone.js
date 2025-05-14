@@ -49,6 +49,14 @@ const ModalClone = () => {
           "Nov",
           "Dec",
         ],
+        title: {
+          text: "Months of loads tracking",
+          style: {
+              color: '#999',
+              fontWeight: 'normal',
+              fontSize: '13px'
+          }
+      },
       },
       yaxis: {
         labels: {
